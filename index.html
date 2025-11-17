@@ -45,9 +45,17 @@
 </form>
 
 <h2>Listado de Clientes</h2>
+
+<label for="search">Buscar cliente:</label>
+<input id="search" type="text" placeholder="Escribe nombre o email para filtrar">
+
 <ul id="client-list">
-    <!-- TODO: Mostrar datos almacenados en IndexedDB dinámicamente -->
 </ul>
+
+<div style="margin-top:1em;">
+    <button id="export-btn" type="button">Exportar clientes (JSON)</button>
+    <input type="file" id="import-file" accept=".json" style="margin-top:0.5em;">
+</div>
 
 <script src="js/crm-indexeddb.js"></script>
 
